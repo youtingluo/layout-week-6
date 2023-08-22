@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "bootstrap/scss/maps";
@@ -10,14 +10,58 @@ $utilities: map-merge(
   (
     // Make an existing utility responsive
     "font-size": (
-      rfs: false,
+      rfs: true,
       responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes
-    )
+    ),
+    "border": (
+      responsive: true,
+      property: border,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-top": (
+      responsive: true,
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-end": (
+      responsive: true,
+      property: border-right,
+      class: border-end,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-start": (
+      responsive: true,
+      property: border-left,
+      class: border-start,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
   )
 );
+@import './utils/mixin';
+@import './utils/utilities';
 // layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
@@ -29,3 +73,7 @@ $utilities: map-merge(
 // 自定義元件
 @import './components/buttons';
 @import './base/base';
+@import './base/font';
+// * {
+//   outline: 1px solid red;
+// }

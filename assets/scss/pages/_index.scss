@@ -1,3 +1,53 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  min-height: 350px;
+  @include pad {
+    height: 511px;
+  }
+}
+.social-link:hover {
+  text-decoration: underline;
+}
+.sell-link:hover::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  width: 29px;
+  height: 29px;
+  background: $secondary;
+  border-radius: 50%;
+  z-index: -1;
+}
+.online-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 35%;
+}
+.event-marquee {
+  animation: slide 12s linear infinite ;
+}
+@keyframes slide {
+  0% {
+  transform: translatex(-100%)
+  }
+  100% {
+    transform: translatex(150%)
+  }
+}
+.event-album {
+  height: 274px;
+}
+.event-tab {
+  transform: translate(-50%, -50%) rotate(-4deg);
+}
+.time-line {
+  height: 100px;
+  display: inline-block;
+  background: #000;
+  transform: rotate(30deg)
 }
