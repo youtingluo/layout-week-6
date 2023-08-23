@@ -9,7 +9,6 @@
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
-
 		<div class="container mt-5">
 			<!-- banner -->
 			<div
@@ -301,7 +300,7 @@
 			<!-- 跑馬燈 -->
 		</div>
 		<div class="py-4 bg-primary text-secondary fs-4 overflow-hidden">
-			<p class="event-marquee text-break">
+			<p class="demo text-break" id="marquee1">
 				活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
 			</p>
 		</div>
@@ -369,7 +368,7 @@
 		</section>
 		<!-- 跑馬燈 -->
     <div class="py-4 bg-primary text-secondary fs-4 overflow-hidden">
-			<p class="event-marquee">
+			<p id="marquee2">
 				活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
 			</p>
 		</div>
@@ -431,13 +430,29 @@
     </section>
 
     <!-- dream -->
-    <section class="py-7 text-center border-2 border-top border-bottom">
-      <p class="fs-4 mb-3">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-      <p class="fs-8">——我也不知道誰說的</p>
+    <section class="py-7 text-center border-2 border-top">
+			<div class="container">
+				<p class="fs-8 fs-lg-4 mb-3">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+				<p class="fs-8">——我也不知道誰說的</p>
+			</div>
     </section>
 
 		<%- include('./layout/footer'); -%>
 
 		<script type="module" src="../main.js"></script>
 	</body>
+
+	<script type="module">
+		import marquee from '../node_modules/vanilla-marquee';
+		// const myScroller = new marquee(document.getElementById("marquee1"), {
+    //   direction: 'right',
+		// 	recalcResize: true,
+		// 	duration: 5000,
+		// })
+		// const myScroller2 = new marquee(document.getElementById("marquee2"), {
+    //   direction: 'left',
+		// 	recalcResize: true,
+		// 	duration: 5000,
+		// })
+	</script>
 </html>

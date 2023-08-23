@@ -23,7 +23,12 @@
   }
 }
 .btn-primary {
+  // --bs-btn-hover-color 使用狀態變數修改就需要使用 var 呼叫變數
   --bs-btn-hover-color: var(--bs-secondary);
+}
+.btn-outline-primary:hover {
+  // 直接覆蓋預設顏色就可以直接取用變數
+  color: $secondary;
 }
 .btn:disabled {
   color: #EBEAE3;
