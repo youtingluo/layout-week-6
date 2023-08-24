@@ -5,7 +5,7 @@
   background-position: center;
   height: 350px;
   min-height: 350px;
-  @include pad {
+  @include media-breakpoint-up(md) { 
     height: 511px;
   }
 }
@@ -44,10 +44,4 @@
 }
 .event-tab {
   transform: translate(-50%, -50%) rotate(-4deg);
-}
-.time-line {
-  height: 100px;
-  display: inline-block;
-  background: #000;
-  transform: rotate(30deg)
 }

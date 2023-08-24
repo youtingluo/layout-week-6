@@ -1,3 +1,12 @@
 .event-img {
   max-height: 600px;
 }
+.time-line {
+  height: 50px;
+  display: inline-block;
+  background: #000;
+  transform: rotate(30deg);
+  @include media-breakpoint-up(md) {
+    height: 100px;
+  }
+}

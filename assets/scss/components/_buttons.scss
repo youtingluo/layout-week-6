@@ -4,8 +4,8 @@
   transition: 0s;
   z-index: 1;
   &:hover {
-    border-top: transparent;
-    border-bottom: transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     border-left: 1px solid var(--bs-secondary);
   }
   &::before {
@@ -19,6 +19,14 @@
     z-index: 10;
   }
   &:hover::before{
+    background: var(--bs-secondary);
+  }
+  &.active {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: transparent;
+  }
+  &.active::before {
     background: var(--bs-secondary);
   }
 }
