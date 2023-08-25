@@ -1,5 +1,8 @@
 .event-img {
-  max-height: 600px;
+  max-height: 180px;
+  @include media-breakpoint-up(md) { 
+    max-height: 550px;
+  }
 }
 .time-line {
   height: 50px;

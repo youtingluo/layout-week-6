@@ -70,6 +70,8 @@ $utilities: map-merge(
 // * {
   //   outline: 1px solid red;
   // }
+// layout
+@import './layout/header';
 // pages
-  @import './pages/index.scss';
-  @import './pages/event';
+@import './pages/index.scss';
+@import './pages/event';
