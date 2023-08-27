@@ -4,15 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/layout-week-6/assets/main-b2439f44.js"></script>
-    <link rel="stylesheet" href="/layout-week-6/assets/main-d891e83f.css">
+    <title>7TAO 活動訂票網</title>
+    <script type="module" crossorigin src="/layout-week-6/assets/marquee-191304c9.js"></script>
+    <link rel="stylesheet" href="/layout-week-6/assets/marquee-79479a6c.css">
   </head>
   <body>
-        <div class="container mt-5">
+    
+<nav class="navbar navbar-expand-lg bg-transparent border-bottom border-3 py-2 py-lg-4">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center" href="#">
+        <span class="logo me-md-3 d-flex justify-content-center">
+          <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" width="28" alt="logo">
+        </span>
+        <span class="d-none d-md-flex align-items-center fs-4">
+          7TAO <span class="ms-1 fs-9">活動訂票網</span>
+        </span>
+      </a>
+      <div class="input-group navbar-input">
+        <input type="text" class="form-control font-sans-tc" placeholder="探索活動">
+        <button class="btn btn-primary" type="button">
+          <i class="icofont-search-1 text-secondary"></i>
+        </button>
+      </div>
+    </div> 
+    <button class="navbar-toggler border border-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="icofont-ui-file"></i> REGISTER
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html"><i class="icofont-ui-user"></i> LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-10">
-          <div class="border border-2 border-dark p-3 h-100">
+          <div class="border border-2 border-dark p-2 p-lg-4 h-100">
             <img class="w-100 object-cover event-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="活動圖片">
           </div>
         </div>
@@ -26,7 +61,7 @@
             <div class="col-8 col-lg-12">
               <div class="d-flex d-lg-block justify-content-between align-items-center border border-2 border-dark text-center py-lg-5 px-4 px-lg-0 h-100">
                 <p class="fs-6 fs-md-3 mb-0">MAY<br>19</p>
-                <p class="time-line border border-2 border-dark mb-0"></p>
+                <p class="event-time-line border border-2 border-dark mb-0"></p>
                 <p class="fs-9 fs-md-4 mb-0">12:00 <br> &#124;<br> 20:00</p>
               </div>
             </div>
@@ -52,7 +87,7 @@
           <h2 class="fs-1 me-auto">TICKET</h2>
           <h2 class="fs-4">購票資訊</h2>
         </div>
-        <table class="table align-middle mt-3">
+        <table class="table align-middle mt-3 fs-10 fs-md-9">
           <thead class="">
             <tr class="border-bottom border-2">
               <th>活動日期</th>
@@ -63,33 +98,33 @@
           </thead>
           <tbody class="font-sans-tc">
             <tr>
-              <td>2023/5/12</td>
+              <td class="ps-0">2023/5/12</td>
               <td>普通票</td>
-              <td>$ 600</td>
-              <td class="text-end pe-lg-3">
-                <button type="button" class="btn btn-outline-primary px-lg-4">
+              <td>$600</td>
+              <td class="text-end ps-0 pe-0 pe-lg-3">
+                <a href="payment.html"  class="btn btn-outline-primary px-1 px-lg-4 fs-10 fs-md-9">
                   <span class="d-none d-md-inline">立即</span>購票
-                </button>
+                </a>
               </td>
             </tr>
             <tr>
-              <td>2023/5/12</td>
+              <td class="ps-0">2023/5/12</td>
               <td>改頭換面票（含大改造）</td>
-              <td>$ 3600</td>
-              <td class="text-end pe-lg-3">
-                <button type="button" class="btn btn-outline-primary px-lg-4">
+              <td>$3600</td>
+              <td class="text-end ps-0 pe-0 pe-lg-3">
+                <a href="payment.html"  class="btn btn-outline-primary px-1 px-lg-4 fs-10 fs-md-9">
                   <span class="d-none d-md-inline">立即</span>購票
-                </button>
+                </a>
               </td>
             </tr>
             <tr>
-              <td>2023/5/12</td>
+              <td class="ps-0">2023/5/12</td>
               <td>必勝票（含戀愛小抄）</td>
-              <td>$ 8000</td>
-              <td class="text-end pe-lg-3">
-                <button type="button" class="btn btn-outline-primary px-lg-4">
+              <td>$8000</td>
+              <td class="text-end ps-0 pe-0 pe-lg-3 fs-10 fs-md-9">
+                <a href="payment.html"  class="btn btn-outline-primary px-1 px-lg-4 fs-10 fs-md-9">
                   <span class="d-none d-md-inline">立即</span>購票
-                </button>
+                </a>
               </td>
             </tr>
           </tbody>

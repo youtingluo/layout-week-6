@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
 		<title>7TAO 活動訂票網</title>
-		<script type="module" crossorigin src="/layout-week-6/assets/index-4dbbc0c4.js"></script>
-		<link rel="modulepreload" crossorigin href="/layout-week-6/assets/main-b2439f44.js">
-		<link rel="stylesheet" href="/layout-week-6/assets/main-d891e83f.css">
-		<link rel="stylesheet" href="/layout-week-6/assets/icofont-aaa4dff3.css">
+		<script type="module" crossorigin src="/layout-week-6/assets/marquee-191304c9.js"></script>
+		<link rel="stylesheet" href="/layout-week-6/assets/marquee-79479a6c.css">
 	</head>
 	<body>
-				<div class="container mt-5">
+		
+<nav class="navbar navbar-expand-lg bg-transparent border-bottom border-3 py-2 py-lg-4">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center" href="#">
+        <span class="logo me-md-3 d-flex justify-content-center">
+          <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" width="28" alt="logo">
+        </span>
+        <span class="d-none d-md-flex align-items-center fs-4">
+          7TAO <span class="ms-1 fs-9">活動訂票網</span>
+        </span>
+      </a>
+      <div class="input-group navbar-input">
+        <input type="text" class="form-control font-sans-tc" placeholder="探索活動">
+        <button class="btn btn-primary" type="button">
+          <i class="icofont-search-1 text-secondary"></i>
+        </button>
+      </div>
+    </div> 
+    <button class="navbar-toggler border border-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            <i class="icofont-ui-file"></i> REGISTER
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html"><i class="icofont-ui-user"></i> LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>		<div class="container mt-5">
 			<!-- banner -->
 			<div
 				class="banner text-white px-6 pt-3 pt-lg-6 pb-4 d-flex flex-column justify-content-between">
@@ -30,25 +63,25 @@
 			</div>
 			<!-- explore -->
 			<div class="row py-5 py-lg-6 g-1 g-lg-4">
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/music-df9d8adf.svg" alt="音樂圖示" />
 						<p class="fs-5">
-							<a href="#" class="stretched-link link-primary">演出</a>
+							<a href="#" class="stretched-link">演出</a>
 						</p>
 					</div>
 				</div>
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/heart-2f474d47.svg" alt="聯誼圖示" />
 						<p class="fs-5">
-							<a href="#" class="stretched-link link-primary">聯誼</a>
+							<a href="#" class="stretched-link">聯誼</a>
 						</p>
 					</div>
 				</div>
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
@@ -56,11 +89,11 @@
 							src="/layout-week-6/assets/museum-993b3355.svg"
 							alt="展覽圖示" />
 						<p class="fs-5">
-							<a href="#" class="stretched-link link-primary">展覽</a>
+							<a href="#" class="stretched-link">展覽</a>
 						</p>
 					</div>
 				</div>
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
@@ -68,11 +101,11 @@
 							src="/layout-week-6/assets/cutlery-3d44f4f6.svg"
 							alt="餐具圖示" />
 						<p class="fs-5">
-							<a href="#" class="stretched-link link-primary">美食</a>
+							<a href="#" class="stretched-link">美食</a>
 						</p>
 					</div>
 				</div>
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
@@ -80,14 +113,14 @@
 							src="/layout-week-6/assets/snowed-mountains-9352d54c.svg"
 							alt="高山圖示" />
 						<p class="fs-5">
-							<a href="#" class="stretched-link link-primary">戶外</a>
+							<a href="#" class="stretched-link">戶外</a>
 						</p>
 					</div>
 				</div>
-				<div class="col-4 col-md-2">
+				<div class="col-4 col-lg-2">
 					<div
 						class="d-flex align-items-center justify-content-center border border-2 bg-primary position-relative py-3 py-md-explo position-relative h-100">
-						<a href="#" class="fs-4 fs-md-3 stretched-link link-secondary lh-sm"
+						<a href="events.html" class="fs-4 fs-md-3 stretched-link text-secondary lh-sm"
 							>探索<br />更多</a
 						>
 					</div>
@@ -100,7 +133,7 @@
 			</div>
 			<!-- event card -->
 			<ul class="row list-unstyled mb-0 gy-4 gy-lg-6">
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							19 MAY 2023
@@ -119,17 +152,17 @@
 								<span
 									><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="logo 圖"
 								/></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
 						</div>
 					</div>
 				</li>
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							23 MAY 2023
@@ -146,17 +179,17 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
 						</div>
 					</div>
 				</li>
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							30 MAY 2023
@@ -173,17 +206,17 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
 						</div>
 					</div>
 				</li>
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							12 June 2023
@@ -200,17 +233,17 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
 						</div>
 					</div>
 				</li>
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							25 June 2023
@@ -227,17 +260,17 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
 						</div>
 					</div>
 				</li>
-				<li class="col-md-4">
+				<li class="col-md-6 col-lg-4">
 					<div>
 						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
 							9 July 2023
@@ -254,10 +287,10 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
-								<a href="#" class="link-primary social-link">社群活動</a>
+								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
-								href="#"
+								href="event.html"
 								class="link-primary sell-link font-sans-tc position-relative"
 								>開賣中 &raquo;</a
 							>
@@ -313,56 +346,56 @@
 		<section class="py-6 py-lg-7">
 			<div class="container">
 				<div class="row gy-6 gy-lg-0">
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						<div class="border border-2 px-3 pt-3 pb-6 position-relative">
 							<div
-								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc event-tab">
+								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc album-tag">
 								社群活動
 							</div>
 							<img
-								class="w-100 object-cover event-album mb-3"
+								class="w-100 object-cover album-img mb-3"
 								src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/01.jpg?raw=true"
 								alt="無聲派對-閉閉嘴dancing" />
 							<p class="fs-8">無聲派對-閉閉嘴dancing</p>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relativ rotate-2">
 							<div
-								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc event-tab">
+								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc album-tag">
 								藝文活動
 							</div>
 							<img
-								class="w-100 object-cover event-album mb-3"
+								class="w-100 object-cover album-img mb-3"
 								src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/02.jpg?raw=true"
 								alt="拯救老店大作戰" />
 							<p class="fs-8">拯救老店大作戰</p>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relative rotate-m-2">
 							<div
-								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc event-tab">
+								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc album-tag">
 								自我察覺
 							</div>
 							<img
-								class="w-100 object-cover event-album mb-3"
+								class="w-100 object-cover album-img mb-3"
 								src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/03.jpg?raw=true"
 								alt="內觀修行-部落篇" />
 							<p class="fs-8">內觀修行-部落篇</p>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relative rotate-2">
 							<div
-								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc event-tab">
+								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc album-tag">
 								聯誼活動
 							</div>
 							<img
-								class="w-100 object-cover event-album mb-3"
+								class="w-100 object-cover album-img mb-3"
 								src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/04.jpg?raw=true"
 								alt="賞櫻野餐" />
 							<p class="fs-8">賞櫻野餐</p>
@@ -449,6 +482,4 @@
 </footer>
 		
 	</body>
-
-	
 </html>
