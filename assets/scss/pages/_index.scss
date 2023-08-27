@@ -28,20 +28,3 @@
   background-size: cover;
   background-position: 0% 35%;
 }
-.event-marquee {
-  animation: slide 12s linear infinite ;
-}
-@keyframes slide {
-  0% {
-  transform: translatex(-100%)
-  }
-  100% {
-    transform: translatex(150%)
-  }
-}
-.event-album {
-  height: 274px;
-}
-.event-tab {
-  transform: translate(-50%, -50%) rotate(-4deg);
-}

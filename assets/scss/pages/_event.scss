@@ -1,15 +1,17 @@
-.event-img {
-  max-height: 180px;
-  @include media-breakpoint-up(md) { 
-    max-height: 550px;
+.event {
+  &-img {
+    max-height: 180px;
+    @include media-breakpoint-up(md) { 
+      max-height: 550px;
+    }
   }
-}
-.time-line {
-  height: 50px;
-  display: inline-block;
-  background: #000;
-  transform: rotate(30deg);
-  @include media-breakpoint-up(md) {
-    height: 100px;
+  &-time-line {
+    height: 50px;
+    display: inline-block;
+    background: #000;
+    transform: rotate(30deg);
+    @include media-breakpoint-up(md) {
+      height: 100px;
+    }
   }
 }

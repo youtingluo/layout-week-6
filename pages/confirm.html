@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/icofont.min.css">
+		<title>7TAO 活動訂票網</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+    <div class="container py-6 py-md-7">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="process-bar d-flex list-unstyled justify-content-between mb-1 mx-1 text-center">
+            <li class="process-item current">
+              <i class="icofont-verification-check"></i>
+            </li>
+            <li class="process-item current">2</li>
+            <li class="process-item">3</li>
+          </ul>
+          <ul class="mx-0 mb-4 mb-md-6 d-flex list-unstyled justify-content-between">
+            <li>
+              訂單確認
+            </li>
+            <li>結帳付款</li>
+            <li>訂購結果</li>
+          </ul>
+          <h1 class="text-center fs-4 fs-md-3 mb-3">返老還童-制服聯誼</h1>
+          <p class="bg-primary text-secondary px-2 text-center mx-md-n4">
+            您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+          </p>
+          <table class="table align-middle mt-3">
+            <thead>
+              <tr class="border-bottom border-2">
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class="font-sans-tc">
+              <tr>
+                <td class="ps-0">訂單編號</td>
+                <td class="text-end pe-0">892746123</td>
+              </tr>
+              <tr>
+                <td class="ps-0">票券</td>
+                <td class="text-end pe-0">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center mt-6">
+            <img src="../assets/images/sparkler.svg" alt="logo">
+            <p class="fs-5 mt-3">結帳資訊</p>
+          </div>
+          <form class="font-sans-tc">
+            <div class="mb-3">
+              <label for="info" class="form-label">取票資訊</label>
+              <input type="text" class="form-control fs-7" id="info" placeholder="請輸入身分證字號或護照號碼">
+              <div class="form-text">請輸入您的<span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 
+                <span class="text-danger">護照號碼</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <p>付款方式</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  信用卡
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  ATM虛擬帳號
+                </label>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <a href="complete.html" class="btn btn-primary d-block mt-4 mt-md-5 mb-3 fs-7">確認訂單並繳費 $8000 &raquo;</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+	</body>
+  </html>
+  

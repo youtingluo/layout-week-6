@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/icofont.min.css">
+		<title>7TAO 活動訂票網</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+    <div class="container py-6 py-md-7">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="process-bar d-flex list-unstyled justify-content-between mb-1 mx-1 text-center">
+            <li class="process-item current">
+              1
+            </li>
+            <li class="process-item">2</li>
+            <li class="process-item">3</li>
+          </ul>
+          <ul class="mx-0 mb-4 mb-md-6 d-flex list-unstyled justify-content-between">
+            <li>
+              訂單確認
+            </li>
+            <li>結帳付款</li>
+            <li>訂購結果</li>
+          </ul>
+          <h1 class="text-center fs-4 fs-md-3 mb-3">返老還童-制服聯誼</h1>
+            
+          <table class="table align-middle mt-3">
+            <thead>
+              <tr class="border-bottom border-2">
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class="font-sans-tc">
+              <tr>
+                <td class="ps-0">日期</td>
+                <td class="text-end pe-0">2023/5/12</td>
+              </tr>
+              <tr>
+                <td class="ps-0">票種</td>
+                <td class="text-end pe-0">改頭換面票（含大改造）</td>
+              </tr>
+              <tr>
+                <td class="ps-0">票價</td>
+                <td class="text-end pe-0">$8000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center mt-6">
+            <img src="../assets/images/sparkler.svg" alt="logo">
+            <p class="fs-5 mt-3">聯絡人資料</p>
+          </div>
+          <form class="font-sans-tc">
+            <div class="mb-3">
+              <label for="name" class="form-label">聯絡人姓名</label>
+              <input type="text" class="form-control fs-7" id="name" placeholder="請輸入聯絡人名稱">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control fs-7" id="email" placeholder="請輸入Email">
+            </div>
+            <div class="mb-3">
+              <label for="tel" class="form-label">手機</label>
+              <input type="tel" class="form-control fs-7" id="tel" placeholder="請輸入手機號碼">
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <a href="confirm.html" class="btn btn-primary d-block mt-4 mt-md-5 mb-3 fs-7">確認表單資料 &raquo;</a>
+                <div class="text-center"><a href="index.html" class="link-dark">取消購票</a></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+	</body>
+  </html>
+  

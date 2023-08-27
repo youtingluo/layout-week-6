@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/icofont.min.css">
+		<title>7TAO 活動訂票網</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+    <div class="container py-6 py-md-7">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <ul class="process-bar d-flex list-unstyled justify-content-between mb-1 mx-1 text-center">
+            <li class="process-item current">
+              <i class="icofont-verification-check"></i>
+            </li>
+            <li class="process-item current">
+              <i class="icofont-verification-check"></i>
+            </li>
+            <li class="process-item current">3</li>
+          </ul>
+          <ul class="mx-0 mb-4 mb-md-6 d-flex list-unstyled justify-content-between">
+            <li>
+              訂單確認
+            </li>
+            <li>結帳付款</li>
+            <li>訂購結果</li>
+          </ul>
+          <div class="text-center mt-6">
+            <i class="icofont-check-circled fs-3"></i>
+            <p class="fs-4 mt-3">訂購成功</p>
+          </div>
+          <table class="table align-middle mt-3">
+            <thead>
+              <tr class="border-bottom border-2">
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody class="font-sans-tc">
+              <tr>
+                <td class="ps-0">訂單編號</td>
+                <td class="text-end pe-0">892746123</td>
+              </tr>
+              <tr>
+                <td class="ps-0">訂購時間</td>
+                <td class="text-end pe-0">2023/04/28 14:30</td>
+              </tr>
+              <tr>
+                <td class="ps-0">票券</td>
+                <td class="text-end pe-0">改頭換面票（含大改造）$8000</td>
+              </tr>
+              <tr>
+                <td class="ps-0">取票序號</td>
+                <td class="text-end pe-0">
+                  <span class="text-danger fw-bold">95G54J4434</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="ps-0">取票號碼</td>
+                <td class="text-end pe-0">
+                  <span class="text-danger fw-bold">04597101</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="form-text mt-3 fs-9 font-sans-tc">
+            請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
+            若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+            若需退票，請按照退票辦法進行申請。
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+	</body>
+  </html>
+  

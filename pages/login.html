@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/icofont.min.css">
+		<title>7TAO 活動訂票網</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+    <div class="container vh-100">
+      <div class="text-center mt-6">
+        <img src="../assets/images/sparkler.svg" alt="logo">
+        <p class="fs-5 my-3">會員登入</p>
+      </div>
+      <div class="row justify-content-center">
+        <form class="col-md-6 col-lg-4 font-sans-tc needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="account" class="form-label">帳號</label>
+            <input type="email" class="form-control fs-7" id="account" placeholder="請輸入帳號" required>
+            <div class="invalid-feedback">
+              請輸入帳號
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">密碼</label>
+            <input type="password" class="form-control fs-7" id="password" placeholder="請輸入密碼" required>
+            <div class="invalid-feedback">
+              請輸入密碼
+            </div>
+          </div>
+          <button class="btn btn-primary w-100" type="submit">登入 &raquo;</button>
+        </form>
+      </div>
+    </div>
+    
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+	</body>
+  </html>
+
+  <script>
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  

@@ -347,8 +347,8 @@ $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
-$enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-validation-icons:     false !default;// custom true !default;
+$enable-negative-margins:     true !default;// custom false !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -414,7 +414,7 @@ $body-text-align:           null !default;
 $link-color:                              $primary !default;
 $link-decoration:                         none !default;//underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        $secondary !default; //shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -807,7 +807,7 @@ $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-font-weight:                 null !default;
-$form-text-color:                       $text-muted !default;
+$form-text-color:                       #4F4F4F;// custom $text-muted !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables

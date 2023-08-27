@@ -1,77 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
+$link-hover-color: #C96464;
 @import './utils/variables';
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
-// 修改 utilities
-$utilities: map-merge(
-  $utilities,
-  (
-    // Make an existing utility responsive
-    "font-size": (
-      rfs: true,
-      responsive: true,
-      property: font-size,
-      class: fs,
-      values: $font-sizes
-    ),
-    "border": (
-      responsive: true,
-      property: border,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-    "border-top": (
-      responsive: true,
-      property: border-top,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-    "border-end": (
-      responsive: true,
-      property: border-right,
-      class: border-end,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-    "border-bottom": (
-      responsive: true,
-      property: border-bottom,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-    "border-start": (
-      responsive: true,
-      property: border-left,
-      class: border-start,
-      values: (
-        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
-      )
-    ),
-  )
-);
 @import './utils/utilities';
 // 載入 bs5
 @import "../../node_modules/bootstrap";
-// 自定義元件
-@import './components/buttons';
+// 自定義
 @import './base/base';
 @import './base/font';
-// * {
-  //   outline: 1px solid red;
-  // }
-// layout
-@import './layout/header';
+// 元件
+@import './components/buttons';
+@import './components/process-bar';
+@import './components/nav-bar';
 // pages
 @import './pages/index.scss';
 @import './pages/event';
