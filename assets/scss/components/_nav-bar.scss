@@ -1,6 +1,7 @@
 nav.navbar {
   background-image: url(./../images/body-background.png);
   background-repeat: repeat;
+  z-index: 1000;
 }
 .logo {
   display: inline-block;
