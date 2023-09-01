@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>7TAO 活動訂票網</title>
-    <script type="module" crossorigin src="/layout-week-6/assets/marquee-191304c9.js"></script>
-    <link rel="stylesheet" href="/layout-week-6/assets/marquee-79479a6c.css">
+    <script type="module" crossorigin src="/layout-week-6/assets/marquee-de979de3.js"></script>
+    <link rel="stylesheet" href="/layout-week-6/assets/marquee-927c7087.css">
   </head>
   <body>
-    
-<nav class="navbar navbar-expand-lg bg-transparent border-bottom border-3 py-2 py-lg-4">
-  <div class="container">
+    <nav class="navbar navbar-expand-lg border-bottom border-3 py-2 py-lg-4 position-absolute start-0 end-0 top-0">
+  <div class="container g-0">
     <div class="d-flex align-items-center">
-      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center" href="#">
+      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center ps-2 ps-md-0" href="#">
         <span class="logo me-md-3 d-flex justify-content-center">
-          <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" width="28" alt="logo">
+          <img src="/layout-week-6/assets/sparkler-b7b65441.svg" width="28" alt="logo">
         </span>
         <span class="d-none d-md-flex align-items-center fs-4">
           7TAO <span class="ms-1 fs-9">活動訂票網</span>
@@ -28,13 +27,13 @@
         </button>
       </div>
     </div> 
-    <button class="navbar-toggler border border-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border border-2 rounded me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse border-top border-top-md-0 border-3 pt-3 mt-3 pt-md-0 mt-md-0" id="navbarNav">
+      <ul class="navbar-nav ms-auto px-2">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">
+          <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#memberModal">
             <i class="icofont-ui-file"></i> REGISTER
           </a>
         </li>
@@ -44,7 +43,27 @@
       </ul>
     </div>
   </div>
-</nav>    <div class="container mt-5">
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="memberModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border border-3">
+      <div class="modal-header border-bottom border-3 position-relative">
+        <h5 class="modal-title position-absolute top-50 start-50 translate-middle">立刻成為7TAO會員
+        </h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body py-5 py-md-6 text-center font-sans-tc">
+        <p class="mb-4">立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+          您也可以先報名活動，日後再註冊帳號，
+          系統會在認證您的Email後，協助您找回舊的訂單。</p>
+          <button type="button" class="btn btn-primary text-secondary px-5">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>    <div class="container mt-3 mt-md-4">
       <div class="row">
         <div class="col-lg-10">
           <div class="border border-2 border-dark p-2 p-lg-4 h-100">
@@ -76,7 +95,7 @@
         <li class="me-1"><div class="btn btn-outline-cus-tab">戶外</div></li>
         <li><div class="btn btn-outline-cus-tab">交通旅遊</div></li>
       </ul>
-      <div class="p-3 p-md-5 border border-2 font-sans-tc">
+      <div class="p-3 p-md-5 border border-2 font-sans-tc bg-light">
         <p class="mb-3">想回到過去？試著讓故事繼續？</p>
         <p class="mb-3">由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
         <p class="mb-3">活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶 &lt;3</p>
@@ -84,10 +103,10 @@
       <!-- ticket -->
       <section class="mt-4 mb-6 mt-md-6 mb-md-7">
         <div class="border border-2 d-flex align-items-center py-4 px-5">
-          <h2 class="fs-1 me-auto">TICKET</h2>
-          <h2 class="fs-4">購票資訊</h2>
+          <p class="fs-5 fs-md-1 me-auto">TICKET</p>
+				  <p class="fs-9 fs-md-4">購票資訊</p>
         </div>
-        <table class="table align-middle mt-3 fs-10 fs-md-9">
+        <table class="table table-hover align-middle mt-3 fs-10 fs-md-9">
           <thead class="">
             <tr class="border-bottom border-2">
               <th>活動日期</th>

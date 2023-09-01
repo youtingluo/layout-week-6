@@ -4,19 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 		<title>7TAO 活動訂票網</title>
-		<script type="module" crossorigin src="/layout-week-6/assets/marquee-191304c9.js"></script>
-		<link rel="stylesheet" href="/layout-week-6/assets/marquee-79479a6c.css">
+		<script type="module" crossorigin src="/layout-week-6/assets/marquee-de979de3.js"></script>
+		<link rel="stylesheet" href="/layout-week-6/assets/marquee-927c7087.css">
 	</head>
 	<body>
-		
-<nav class="navbar navbar-expand-lg bg-transparent border-bottom border-3 py-2 py-lg-4">
-  <div class="container">
+		<nav class="navbar navbar-expand-lg border-bottom border-3 py-2 py-lg-4 position-absolute start-0 end-0 top-0">
+  <div class="container g-0">
     <div class="d-flex align-items-center">
-      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center" href="#">
+      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center ps-2 ps-md-0" href="#">
         <span class="logo me-md-3 d-flex justify-content-center">
-          <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" width="28" alt="logo">
+          <img src="/layout-week-6/assets/sparkler-b7b65441.svg" width="28" alt="logo">
         </span>
         <span class="d-none d-md-flex align-items-center fs-4">
           7TAO <span class="ms-1 fs-9">活動訂票網</span>
@@ -29,13 +27,13 @@
         </button>
       </div>
     </div> 
-    <button class="navbar-toggler border border-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border border-2 rounded me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse border-top border-top-md-0 border-3 pt-3 mt-3 pt-md-0 mt-md-0" id="navbarNav">
+      <ul class="navbar-nav ms-auto px-2">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">
+          <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#memberModal">
             <i class="icofont-ui-file"></i> REGISTER
           </a>
         </li>
@@ -45,15 +43,35 @@
       </ul>
     </div>
   </div>
-</nav>		<div class="container mt-5">
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="memberModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border border-3">
+      <div class="modal-header border-bottom border-3 position-relative">
+        <h5 class="modal-title position-absolute top-50 start-50 translate-middle">立刻成為7TAO會員
+        </h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body py-5 py-md-6 text-center font-sans-tc">
+        <p class="mb-4">立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+          您也可以先報名活動，日後再註冊帳號，
+          系統會在認證您的Email後，協助您找回舊的訂單。</p>
+          <button type="button" class="btn btn-primary text-secondary px-5">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>		<div class="container mt-3 mt-md-4">
 			<!-- banner -->
 			<div
 				class="banner text-white px-6 pt-3 pt-lg-6 pb-4 d-flex flex-column justify-content-between">
-				<p class="fs-2">19 MAY 2023</p>
+				<p class="fs-4 fs-md-2">19 MAY <br class="d-md-none"> 2023</p>
 				<div class="row justify-content-center text-center">
 					<div class="col-lg-8">
-						<p class="fs-5">隔牆有耳-沒有草東的派對</p>
-						<p class="font-sans-tc d-none d-md-block">
+						<p class="fs-8 fs-md-5">隔牆有耳-沒有草東的派對</p>
+						<p class="font-sans-tc d-none d-md-block fs-9">
 							你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
 							帶上啤酒、野餐墊，讓我們在Live
 							House外面一起開場「沒有草東的派對」吧！
@@ -66,8 +84,8 @@
 				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
-						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/music-df9d8adf.svg" alt="音樂圖示" />
-						<p class="fs-5">
+						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/music-4a0e3088.svg" alt="音樂圖示" />
+						<p class="fs-9 fs-md-5">
 							<a href="#" class="stretched-link">演出</a>
 						</p>
 					</div>
@@ -75,8 +93,8 @@
 				<div class="col-4 col-lg-2">
 					<div
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
-						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/heart-2f474d47.svg" alt="聯誼圖示" />
-						<p class="fs-5">
+						<img class="mb-1 mb-md-2" src="/layout-week-6/assets/heart-bbb6cb98.svg" alt="聯誼圖示" />
+						<p class="fs-9 fs-md-5">
 							<a href="#" class="stretched-link">聯誼</a>
 						</p>
 					</div>
@@ -86,9 +104,9 @@
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
 							class="mb-1 mb-md-2"
-							src="/layout-week-6/assets/museum-993b3355.svg"
+							src="/layout-week-6/assets/museum-342e4bb5.svg"
 							alt="展覽圖示" />
-						<p class="fs-5">
+						<p class="fs-9 fs-md-5">
 							<a href="#" class="stretched-link">展覽</a>
 						</p>
 					</div>
@@ -98,9 +116,9 @@
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
 							class="mb-1 mb-md-2"
-							src="/layout-week-6/assets/cutlery-3d44f4f6.svg"
+							src="/layout-week-6/assets/cutlery-52bd0b82.svg"
 							alt="餐具圖示" />
-						<p class="fs-5">
+						<p class="fs-9 fs-md-5">
 							<a href="#" class="stretched-link">美食</a>
 						</p>
 					</div>
@@ -110,9 +128,9 @@
 						class="border border-2 position-relative text-center py-3 py-md-explo position-relative h-100">
 						<img
 							class="mb-1 mb-md-2"
-							src="/layout-week-6/assets/snowed-mountains-9352d54c.svg"
+							src="/layout-week-6/assets/snowed-mountains-00280b58.svg"
 							alt="高山圖示" />
-						<p class="fs-5">
+						<p class="fs-9 fs-md-5">
 							<a href="#" class="stretched-link">戶外</a>
 						</p>
 					</div>
@@ -128,21 +146,21 @@
 			</div>
 			<!-- title recent -->
 			<div class="border border-2 d-flex align-items-center py-4 px-5 mb-4 mb-lg-5">
-				<h2 class="fs-1 me-auto">RECENT</h2>
-				<h2 class="fs-4">近期活動</h2>
+				<p class="fs-5 fs-md-1 me-auto">RECENT</p>
+				<p class="fs-9 fs-md-4">近期活動</p>
 			</div>
 			<!-- event card -->
 			<ul class="row list-unstyled mb-0 gy-4 gy-lg-6">
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							19 MAY 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/01.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">邪典電影派對——房間</h3>
+							alt="邪典電影派對——房間" />
+						<h3 class="fs-8 fs-md-5 my-2">邪典電影派對——房間</h3>
 						<p class="mb-3 font-sans-tc">
 							你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...
 						</p>
@@ -150,7 +168,7 @@
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
 								<span
-									><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="logo 圖"
+									><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="logo 圖"
 								/></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
@@ -164,21 +182,21 @@
 				</li>
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							23 MAY 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/02.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">怪舞俱樂部</h3>
+							alt="怪舞俱樂部" />
+						<h3 class="fs-8 fs-md-5 my-2">怪舞俱樂部</h3>
 						<p class="mb-3 font-sans-tc">
 							覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...
 						</p>
 						<div
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
-								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
+								<span><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="" /></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
@@ -191,21 +209,21 @@
 				</li>
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							30 MAY 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/03.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">哈利波特馬拉松</h3>
+							alt="哈利波特馬拉松" />
+						<h3 class="fs-8 fs-md-5 my-2">哈利波特馬拉松</h3>
 						<p class="mb-3 font-sans-tc">
 							每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
 						</p>
 						<div
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
-								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
+								<span><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="logo" /></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
@@ -218,21 +236,21 @@
 				</li>
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							12 June 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/04.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">皮卡丘排球大賽</h3>
+							alt="皮卡丘排球大賽" />
+						<h3 class="fs-8 fs-md-5 my-2">皮卡丘排球大賽</h3>
 						<p class="mb-3 font-sans-tc">
 							還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
 						</p>
 						<div
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
-								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
+								<span><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="" /></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
@@ -245,21 +263,21 @@
 				</li>
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							25 June 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/05.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">酒精路跑</h3>
+							alt="酒精路跑" />
+						<h3 class="fs-8 fs-md-5 my-2">酒精路跑</h3>
 						<p class="mb-3 font-sans-tc">
 							身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
 						</p>
 						<div
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
-								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
+								<span><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="" /></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
@@ -272,21 +290,21 @@
 				</li>
 				<li class="col-md-6 col-lg-4">
 					<div>
-						<h2 class="border-bottom border-3 border-primary mb-2 fs-3">
+						<h2 class="border-bottom border-3 border-primary mb-2 fs-4 fs-md-3">
 							9 July 2023
 						</h2>
 						<img
 							class="h-255 w-100 object-cover"
 							src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/06.jpg?raw=true"
-							alt="" />
-						<h3 class="fs-5 my-2">展覽——我的房間</h3>
+							alt="展覽——我的房間" />
+						<h3 class="fs-8 fs-md-5 my-2">展覽——我的房間</h3>
 						<p class="mb-3 font-sans-tc">
 							每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
 						</p>
 						<div
 							class="d-flex justify-content-between align-items-center border-top border-bottom border-2 border-primary py-2">
 							<div>
-								<span><img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="" /></span>
+								<span><img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="" /></span>
 								<a href="events.html" class="link-primary social-link">社群活動</a>
 							</div>
 							<a
@@ -301,15 +319,15 @@
 			<!-- title online -->
 			<section class="py-5 py-lg-7">
 				<div class="border border-2 d-flex align-items-center py-4 px-5 mb-5">
-					<h2 class="fs-1 me-auto">ONLINE</h2>
-					<h2 class="fs-4">線上活動</h2>
+					<p class="fs-5 fs-md-1 me-auto">ONLINE</p>
+				<p class="fs-9 fs-md-4">線上活動</p>
 				</div>
 				<div class="row">
 					<div class="col-md-7">
 						<div class="online-bg h-100"></div>
 					</div>
 					<div class="col-md-5">
-						<p class="mb-3 fs-4">切特居批踢</p>
+						<p class="mt-3 mt-md-0 mb-3 fs-4">切特居批踢</p>
 						<button type="button" class="btn btn-outline-cus-tab">競賽</button>
 						<button
 							type="button"
@@ -337,7 +355,7 @@
 			</section>
 			<!-- 跑馬燈 -->
 		</div>
-		<div class="py-4 bg-primary text-secondary fs-4 overflow-hidden">
+		<div class="py-4 bg-primary text-secondary fs-9 fs-md-4 overflow-hidden">
 			<p class="demo text-break" id="marquee1">
 				活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
 			</p>
@@ -345,8 +363,8 @@
 		<!-- 活動集錦 -->
 		<section class="py-6 py-lg-7">
 			<div class="container">
-				<div class="row gy-6 gy-lg-0">
-					<div class="col-md-6 col-lg-3">
+				<ul class="row gy-6 gy-lg-0">
+					<li class="col-md-6 col-lg-3">
 						<div class="border border-2 px-3 pt-3 pb-6 position-relative">
 							<div
 								class="bg-white position-absolute start-50 top-0 py-1 px-3 font-sans-tc album-tag">
@@ -358,8 +376,8 @@
 								alt="無聲派對-閉閉嘴dancing" />
 							<p class="fs-8">無聲派對-閉閉嘴dancing</p>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
+					</li>
+					<li class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relativ rotate-2">
 							<div
@@ -372,8 +390,8 @@
 								alt="拯救老店大作戰" />
 							<p class="fs-8">拯救老店大作戰</p>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
+					</li>
+					<li class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relative rotate-m-2">
 							<div
@@ -386,8 +404,8 @@
 								alt="內觀修行-部落篇" />
 							<p class="fs-8">內觀修行-部落篇</p>
 						</div>
-					</div>
-					<div class="col-md-6 col-lg-3">
+					</li>
+					<li class="col-md-6 col-lg-3">
 						<div
 							class="border border-2 px-3 pt-3 pb-6 position-relative rotate-2">
 							<div
@@ -400,12 +418,12 @@
 								alt="賞櫻野餐" />
 							<p class="fs-8">賞櫻野餐</p>
 						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 		<!-- 跑馬燈 -->
-    <div class="py-4 bg-primary text-secondary fs-4 overflow-hidden">
+    <div class="py-4 bg-primary text-secondary fs-9 fs-md-4 overflow-hidden">
 			<p id="marquee2">
 				活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS
 			</p>
@@ -417,7 +435,7 @@
           <div class="col-lg-6 border border-2 mb-4 mb-lg-0">
             <div class="h-100">
               <div class="py-3 px-5 border border-bottom-2 border-start-0 border-top-0 border-end-0">
-                <p class="fs-4">#FOLLOW US</p>
+                <p class="fs-5 fs-md-4">#FOLLOW US</p>
               </div>
               <div class="p-5">
                 <p class="mb-5">
@@ -433,7 +451,7 @@
                     </a>
                   </li>
                   <li class="mb-3">
-                    <a href="tel:" class="link-primary" target="_blank">
+                    <a href="tel:09123123123" class="link-primary" target="_blank">
                         <i class="p-1 bg-primary text-white icofont-phone me-3"></i>
                         09123123123
                     </a>
@@ -451,7 +469,7 @@
           <div class="col-lg-6 border border-2 border-start-2 border-start-lg-0">
             <div>
               <div class="border border-2 py-3 px-5 border-start-0 border-top-0 border-end-0">
-                <p class="fs-4 text-uppercase">#subscribe us</p>
+                <p class="fs-5 fs-md-4 text-uppercase">#subscribe us</p>
               </div>
               <div class="px-5 pt-5">
                 <p class="mb-5">訂閱電子報送折價券！<br>
@@ -471,10 +489,10 @@
     <section class="py-6 py-lg-7 text-center border-2 border-top">
 			<div class="container">
 				<p class="fs-8 fs-lg-4 mb-3">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-				<p class="fs-8">——我也不知道誰說的</p>
+				<p class="fs-10 fs-md-8">——我也不知道誰說的</p>
 			</div>
     </section>
-
+		
 		<footer class="text-center py-5 border-top border-2">
   <div class="container">
     © 7TAO七逃. All Rights Reserved

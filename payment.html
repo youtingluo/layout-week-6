@@ -4,19 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 		<title>7TAO 活動訂票網</title>
-		<script type="module" crossorigin src="/layout-week-6/assets/marquee-191304c9.js"></script>
-		<link rel="stylesheet" href="/layout-week-6/assets/marquee-79479a6c.css">
+		<script type="module" crossorigin src="/layout-week-6/assets/marquee-de979de3.js"></script>
+		<link rel="stylesheet" href="/layout-week-6/assets/marquee-927c7087.css">
 	</head>
 	<body>
-		
-<nav class="navbar navbar-expand-lg bg-transparent border-bottom border-3 py-2 py-lg-4">
-  <div class="container">
+		<nav class="navbar navbar-expand-lg border-bottom border-3 py-2 py-lg-4 position-absolute start-0 end-0 top-0">
+  <div class="container g-0">
     <div class="d-flex align-items-center">
-      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center" href="#">
+      <a href="index.html" class="navbar-brand me-1 me-sm-4 d-flex align-items-center ps-2 ps-md-0" href="#">
         <span class="logo me-md-3 d-flex justify-content-center">
-          <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" width="28" alt="logo">
+          <img src="/layout-week-6/assets/sparkler-b7b65441.svg" width="28" alt="logo">
         </span>
         <span class="d-none d-md-flex align-items-center fs-4">
           7TAO <span class="ms-1 fs-9">活動訂票網</span>
@@ -29,13 +27,13 @@
         </button>
       </div>
     </div> 
-    <button class="navbar-toggler border border-2 rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border border-2 rounded me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse border-top border-top-md-0 border-3 pt-3 mt-3 pt-md-0 mt-md-0" id="navbarNav">
+      <ul class="navbar-nav ms-auto px-2">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">
+          <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#memberModal">
             <i class="icofont-ui-file"></i> REGISTER
           </a>
         </li>
@@ -45,7 +43,27 @@
       </ul>
     </div>
   </div>
-</nav>    <div class="container py-6 py-md-7">
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="memberModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border border-3">
+      <div class="modal-header border-bottom border-3 position-relative">
+        <h5 class="modal-title position-absolute top-50 start-50 translate-middle">立刻成為7TAO會員
+        </h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body py-5 py-md-6 text-center font-sans-tc">
+        <p class="mb-4">立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。
+          您也可以先報名活動，日後再註冊帳號，
+          系統會在認證您的Email後，協助您找回舊的訂單。</p>
+          <button type="button" class="btn btn-primary text-secondary px-5">立即成為會員</button>
+      </div>
+    </div>
+  </div>
+</div>    <div class="container py-6 py-md-7">
       <div class="row justify-content-center">
         <div class="col-md-6">
           <ul class="process-bar d-flex list-unstyled justify-content-between mb-1 mx-1 text-center">
@@ -86,25 +104,34 @@
             </tbody>
           </table>
           <div class="text-center mt-6">
-            <img src="/layout-week-6/assets/sparkler-5a66c1ec.svg" alt="logo">
+            <img src="/layout-week-6/assets/sparkler-b7b65441.svg" alt="logo">
             <p class="fs-5 mt-3">聯絡人資料</p>
           </div>
-          <form class="font-sans-tc">
+          <form action="confirm.html" class="font-sans-tc needs-validation" novalidate>
             <div class="mb-3">
               <label for="name" class="form-label">聯絡人姓名</label>
-              <input type="text" class="form-control fs-7" id="name" placeholder="請輸入聯絡人名稱">
+              <input type="text" class="form-control fs-7" id="name" placeholder="請輸入聯絡人名稱" required>
+              <div class="invalid-feedback">
+                請輸入姓名
+              </div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control fs-7" id="email" placeholder="請輸入Email">
+              <input type="email" class="form-control fs-7" id="email" placeholder="請輸入Email" required>
+              <div class="invalid-feedback">
+                請輸入Email
+              </div>
             </div>
-            <div class="mb-3">
+            <div>
               <label for="tel" class="form-label">手機</label>
-              <input type="tel" class="form-control fs-7" id="tel" placeholder="請輸入手機號碼">
+              <input type="tel" class="form-control fs-7" id="tel" placeholder="請輸入手機號碼" required>
+              <div class="invalid-feedback">
+                請輸入手機號碼
+              </div>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <a href="confirm.html" class="btn btn-primary d-block mt-4 mt-md-5 mb-3 fs-7">確認表單資料 &raquo;</a>
+                <button type="submit" class="btn btn-primary w-100 mt-4 mt-md-5 mb-3 fs-7">確認表單資料 &raquo;</button>
                 <div class="text-center"><a href="index.html" class="link-dark">取消購票</a></div>
               </div>
             </div>
@@ -118,6 +145,26 @@
     © 7TAO七逃. All Rights Reserved
   </div>
 </footer>    
+    <script>
+      (() => {
+        'use strict'
+  
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+  
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+  
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
 	</body>
   </html>
   
