@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/icofont.min.css">
 		<title>7TAO 活動訂票網</title>
 	</head>
 	<body>
@@ -51,10 +50,13 @@
             <img src="../assets/images/sparkler.svg" alt="logo">
             <p class="fs-5 mt-3">結帳資訊</p>
           </div>
-          <form class="font-sans-tc">
+          <form action="complete.html" class="font-sans-tc needs-validation" novalidate>
             <div class="mb-3">
               <label for="info" class="form-label">取票資訊</label>
-              <input type="text" class="form-control fs-7" id="info" placeholder="請輸入身分證字號或護照號碼">
+              <input type="text" class="form-control fs-7" id="info" placeholder="請輸入身分證字號或護照號碼" required>
+              <div class="invalid-feedback">
+                請輸入身分證字號或護照號碼
+              </div>
               <div class="form-text">請輸入您的<span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 
                 <span class="text-danger">護照號碼</span>
               </div>
@@ -76,7 +78,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <a href="complete.html" class="btn btn-primary d-block mt-4 mt-md-5 mb-3 fs-7">確認訂單並繳費 $8000 &raquo;</a>
+                <button type="submit" class="btn btn-primary d-block mt-4 mt-md-5 mb-3 fs-7">確認訂單並繳費 $8000 &raquo;</button>
               </div>
             </div>
           </form>
@@ -86,6 +88,26 @@
     
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script>
+      (() => {
+        'use strict'
+  
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+  
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+  
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
 	</body>
   </html>
   
